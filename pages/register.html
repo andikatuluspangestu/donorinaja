@@ -5,14 +5,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-  <title>Daftar Akun - DonorinAja</title>
+  <title>Masuk - DonorinAja</title>
 
   <!-- Favicon -->
-  <link rel="icon" href="assets/img/favicon/favicon.ico" type="image/x-icon">
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
-  <link rel="manifest" href="assets/img/favicon/site.webmanifest">
+  <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
   <!-- Meta -->
   <meta name="description"
@@ -38,6 +41,61 @@
   <link rel="stylesheet" href="assets/vendor/aos/aos.css">
   <link rel="stylesheet" href="assets/css/style.css">
 
+  <!-- Custom Fullscreen CSS -->
+  <style>
+    /* Mengatur font default ke Poppins */
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+    }
+
+    main,
+    .container,
+    .row,
+    .card {
+      height: 100%;
+    }
+
+    section {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .card {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .card-body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100%;
+    }
+
+    .btn-custom-red {
+      background-color: red;
+      /* Warna merah kustom */
+      border-color: red;
+      color: #ffffff;
+      /* Warna teks */
+    }
+
+    .btn-custom-red:hover {
+      background-color: #c40000;
+      /* Warna hijau saat hover */
+      border-color: #c40000;
+      color: #ffffff;
+      /* Warna teks tetap putih */
+    }
+  </style>
 </head>
 
 <body>
@@ -47,8 +105,78 @@
 
   <!-- Main -->
   <main>
-
-    <!-- Code untuk Tampilan Daftar Akun -->
+    <!-- Login 8 - Bootstrap Brain Component -->
+    <section class="bg-light">
+      <div class="container">
+        <div class="row justify-content-center align-items-center">
+          <div class="card border-light-subtle shadow-sm">
+            <div class="row g-0">
+              <div class="col-12 col-md-6">
+                <img class="img-fluid rounded-start w-100 h-100 object-fit-cover" loading="lazy"
+                  src="../assets/img/auth/bg-login-page.webp" alt="Welcome back you've been missed!">
+              </div>
+              <div class="col-12 col-md-6 d-flex align-items-center justify-content-center">
+                <div class="col-12 col-lg-11 col-xl-10">
+                  <div class="card-body p-3 p-md-4 p-xl-5">
+                    <div class="row">
+                      <div class="col-12">
+                        <div class="mb-5">
+                          <h1 class="text-center" style="color: red;"><b>Selamat Datang!</b></h1>
+                        </div>
+                      </div>
+                    </div>
+                    <form action="#!">
+                      <div class="row gy-3 overflow-hidden">
+                        <div class="col-12">
+                          <div class="form-floating mb-3">
+                            <input type="email" class="form-control" name="email" id="email"
+                              placeholder="name@example.com" required>
+                            <label for="email" class="form-label">Email</label>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <div class="form-floating mb-3 position-relative">
+                            <input type="password" class="form-control" name="password" id="password"
+                              placeholder="Password" required>
+                            <label for="password" class="form-label">Password</label>
+                            <!-- eye Icon -->
+                            <i class="fa fa-eye position-absolute top-50 end-0 translate-middle-y me-3"
+                              id="togglePassword" style="cursor: pointer;"></i>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <div class="form-floating mb-3 position-relative">
+                            <input type="password" class="form-control" name="conf-password" id="conf-password"
+                              placeholder="Password" required>
+                            <label for="conf-password" class="form-label">Konfirmasi Password</label>
+                            <!-- eye Icon -->
+                            <i class="fa fa-eye position-absolute top-50 end-0 translate-middle-y me-3"
+                              id="togglePassword" style="cursor: pointer;"></i>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <div class="d-grid">
+                            <button class="btn btn-lg btn-custom-red" type="submit">Login</button>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                    <div class="row">
+                      <div class="col-12">
+                        <div class="d-flex flex-column flex-md-row justify-content-md-center mt-5">
+                          <p>Belum Memiliki Akun? <a href="register.html" class="text-decoration-none"
+                              style="color: red"><b>Daftar</b></a></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
   </main>
 
@@ -61,7 +189,19 @@
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
   <script src="assets/js/script.js"></script>
+  <script>
+    const togglePassword = document.querySelector('#togglePassword');
+    const password = document.querySelector('#password');
 
+    togglePassword.addEventListener('click', function (e) {
+      // toggle the type attribute
+      const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+      password.setAttribute('type', type);
+
+      // toggle the eye slash icon
+      this.classList.toggle('fa-eye-slash');
+    });
+  </script>
 </body>
 
 </html>
