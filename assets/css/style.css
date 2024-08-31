@@ -272,4 +272,172 @@ header {
       transform: scale(1);
       box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); }
 
+.cta {
+  margin-top: 60px;
+  justify-content: center;
+  align-items: center;
+  height: 90vh; }
+  .cta .bsb-overlay {
+    --bsb-overlay-opacity: 0.5;
+    --bsb-overlay-bg-color: var(--bs-black-rgb);
+    position: relative;
+    border-radius: 15px !important; }
+    .cta .bsb-overlay:after {
+      background-color: rgba(var(--bsb-overlay-bg-color), var(--bsb-overlay-opacity));
+      bottom: 0;
+      content: "";
+      display: block;
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: 0;
+      border-radius: 15px !important; }
+    .cta .bsb-overlay > * {
+      position: relative;
+      z-index: 1; }
+  .cta .bsb-overlay-figure {
+    --bsb-overlay-figure-opacity: 0.5;
+    --bsb-overlay-figure-bg-color: var(--bs-black-rgb);
+    position: relative; }
+    .cta .bsb-overlay-figure:after {
+      background-color: rgba(var(--bsb-overlay-figure-bg-color), var(--bsb-overlay-figure-opacity));
+      bottom: 0;
+      content: "";
+      display: block;
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 0; }
+  .cta .bsb-overlay-hover {
+    --bsb-overlay-hover-opacity: 0.5;
+    --bsb-overlay-hover-bg-color: var(--bs-black-rgb);
+    position: relative; }
+    .cta .bsb-overlay-hover > a {
+      bottom: 0;
+      display: block;
+      left: 0;
+      position: relative;
+      right: 0;
+      top: 0; }
+      .cta .bsb-overlay-hover > a > img.bsb-scale {
+        --bsb-scale: 1;
+        transform: scale3d(var(--bsb-scale), var(--bsb-scale), var(--bsb-scale));
+        transform-style: preserve-3d;
+        transition: transform .5s; }
+      .cta .bsb-overlay-hover > a > img.bsb-scale-up {
+        transform: scale3d(var(--bsb-scale), var(--bsb-scale), var(--bsb-scale));
+        transform-style: preserve-3d;
+        transition: transform .5s;
+        --bsb-scale: 1.2; }
+      .cta .bsb-overlay-hover > a:after {
+        background-color: rgba(var(--bsb-overlay-hover-bg-color), var(--bsb-overlay-hover-opacity));
+        content: "";
+        cursor: pointer !important;
+        display: block;
+        z-index: 0;
+        bottom: 0;
+        left: 0;
+        opacity: 0;
+        position: absolute;
+        right: 0;
+        top: 0; }
+    .cta .bsb-overlay-hover > figcaption {
+      bottom: 0;
+      left: 0;
+      opacity: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      pointer-events: none;
+      z-index: 1; }
+      .cta .bsb-overlay-hover > figcaption > * {
+        opacity: 0; }
+    .cta .bsb-overlay-hover:hover > a > img.bsb-hover-scale {
+      --bsb-scale-hover: 1;
+      transform: scale3d(var(--bsb-scale-hover), var(--bsb-scale-hover), var(--bsb-scale-hover)); }
+    .cta .bsb-overlay-hover:hover > a > img.bsb-hover-scale-up {
+      --bsb-scale-hover: 1.2;
+      transform: scale3d(var(--bsb-scale-hover), var(--bsb-scale-hover), var(--bsb-scale-hover)); }
+    .cta .bsb-overlay-hover:hover > a:after {
+      opacity: 1;
+      transition: opacity .15s linear; }
+    .cta .bsb-overlay-hover:hover > figcaption {
+      opacity: 1;
+      transition: opacity .15s linear .1s; }
+      .cta .bsb-overlay-hover:hover > figcaption > .bsb-hover-fadeIn {
+        --bsb-animation-duration: 500ms;
+        animation-duration: var(--bsb-animation-duration);
+        animation-fill-mode: both;
+        animation-name: bsb-fadeIn; }
+      .cta .bsb-overlay-hover:hover > figcaption > .bsb-hover-fadeInUp {
+        --bsb-animation-duration: 500ms;
+        animation-duration: var(--bsb-animation-duration);
+        animation-fill-mode: both;
+        animation-name: bsb-fadeInUp; }
+      .cta .bsb-overlay-hover:hover > figcaption > .bsb-hover-fadeInDown {
+        --bsb-animation-duration: 500ms;
+        animation-duration: var(--bsb-animation-duration);
+        animation-fill-mode: both;
+        animation-name: bsb-fadeInDown; }
+      .cta .bsb-overlay-hover:hover > figcaption > .bsb-hover-fadeInLeft {
+        --bsb-animation-duration: 500ms;
+        animation-duration: var(--bsb-animation-duration);
+        animation-fill-mode: both;
+        animation-name: bsb-fadeInLeft; }
+      .cta .bsb-overlay-hover:hover > figcaption > .bsb-hover-fadeInRight {
+        --bsb-animation-duration: 500ms;
+        animation-duration: var(--bsb-animation-duration);
+        animation-fill-mode: both;
+        animation-name: bsb-fadeInRight; }
+      .cta .bsb-overlay-hover:hover > figcaption > .bsb-hover-zoomIn {
+        --bsb-animation-duration: 500ms;
+        animation-duration: var(--bsb-animation-duration);
+        animation-fill-mode: both;
+        animation-name: bsb-zoomIn; }
+  .cta .bsb-btn-xl {
+    --bs-btn-padding-y: 0.625rem;
+    --bs-btn-padding-x: 1.25rem;
+    --bs-btn-font-size: calc(1.26rem + 0.12vw);
+    --bs-btn-border-radius: var(--bs-border-radius-lg); }
+  .cta .bsb-btn-2xl {
+    background-color: #ca4443;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease; }
+    .cta .bsb-btn-2xl:hover {
+      background-color: #aa3130;
+      transform: scale(1);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); }
+  .cta .bsb-btn-3xl {
+    --bs-btn-padding-y: 0.875rem;
+    --bs-btn-padding-x: 1.75rem;
+    --bs-btn-font-size: calc(1.28rem + 0.36vw);
+    --bs-btn-border-radius: var(--bs-border-radius-lg); }
+  .cta .bsb-btn-4xl {
+    --bs-btn-padding-y: 1rem;
+    --bs-btn-padding-x: 2rem;
+    --bs-btn-font-size: calc(1.29rem + 0.48vw);
+    --bs-btn-border-radius: var(--bs-border-radius-lg); }
+  .cta .bsb-btn-5xl {
+    --bs-btn-padding-y: 1.125rem;
+    --bs-btn-padding-x: 2.25rem;
+    --bs-btn-font-size: calc(1.3rem + 0.6vw);
+    --bs-btn-border-radius: var(--bs-border-radius-lg); }
+  .cta .bsb-cta-1 {
+    background-attachment: fixed;
+    background-position: 50%;
+    background-size: cover;
+    padding-bottom: 3rem;
+    padding-top: 3rem; }
+
 /*# sourceMappingURL=style.css.map */
