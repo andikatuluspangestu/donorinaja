@@ -440,4 +440,13 @@ header {
     padding-bottom: 3rem;
     padding-top: 3rem; }
 
+footer {
+  background-color: #ca4443;
+  color: #FFFFFF;
+  padding: 20px;
+  text-align: center; }
+  footer a {
+    color: #FFFFFF;
+    text-decoration: none; }
+
 /*# sourceMappingURL=style.css.map */

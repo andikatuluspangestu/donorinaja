@@ -639,4 +639,18 @@ header {
 
 }
 
+// footer
+footer {
+  background-color: $primary-color;
+  color: $quaternary-color;
+  padding: 20px;
+  text-align: center;
+
+  a {
+    color: $quaternary-color;
+    text-decoration: none;
+  }
+
+}
+
 // Responsive (Smartphone)
