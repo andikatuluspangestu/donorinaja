@@ -48,3 +48,23 @@ togglePassword.addEventListener('click', function () {
     this.classList.add('fa-eye');
   }
 });
+
+const toggleConfPassword = document.querySelector('#toggleConfPassword');
+const confpassword = document.querySelector('#confpassword');
+
+toggleConfPassword.addEventListener('click', function () {
+
+  const type = confpassword.getAttribute('type') === 'password' ? 'text' : 'password';
+  confpassword.setAttribute('type', type);
+
+  if (type === 'password') {
+    this.classList.remove('fa-eye');
+    this.classList.add('fa-eye-slash');
+  } else if (type === 'password') {
+    this.classList.remove('fa-eye');
+    this.classList.add('fa-eye-slash');
+  } else {
+    this.classList.remove('fa-eye-slash');
+    this.classList.add('fa-eye');
+  }
+});
