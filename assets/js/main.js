@@ -1,9 +1,9 @@
 window.onscroll = () => {
-  const navbar = document.querySelector('.navbar');
+  const header = document.querySelector('.header');
 
   window.pageYOffset > 50
-    ? navbar.classList.add('sticky')
-    : navbar.classList.remove('sticky');
+    ? header.classList.add('sticky')
+    : header.classList.remove('sticky');
 
 };
 
