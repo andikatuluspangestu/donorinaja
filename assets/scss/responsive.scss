@@ -1,0 +1,409 @@
+// For Tablet
+@media (max-width: 1024px) and (min-width: 768px) {
+
+  // Header
+  .header {
+
+    .offcanvas-body {
+      padding: 2rem;
+      background-color: #f8f9fa;
+    }
+
+    .offcanvas .btn-close {
+      filter: invert(0);
+    }
+
+    .navbar-toggler {
+      border: none;
+      background-color: transparent;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .navbar-nav {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+
+        .nav-link {
+          text-align: left;
+          color: $primary-color;
+          text-decoration: none;
+          padding: 1rem;
+          font-size: 18px;
+          font-weight: 500;
+          border-radius: 8px;
+
+          &:hover {
+            background-color: $secondary-color;
+            color: $primary-color;
+            transition: background-color 0.3s ease;
+          }
+
+          &.active {
+            background-color: $tertiary-color;
+            color: $primary-color;
+          }
+
+          &:focus {
+            background-color: $secondary-color;
+            color: $primary-color;
+            outline: none;
+            box-shadow: 0 0 0 2px $primary-color;
+          }
+        }
+      }
+    }
+  }
+
+  // Hero
+  .hero {
+    .hero-text-section {
+      width: 100%;
+      margin-left: 0;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      text-align: center;
+    }
+
+    .hero-subtitle {
+      font-size: 1rem;
+      text-align: center;
+    }
+
+    .hero-img {
+      margin-left: 0;
+      margin-top: 20px;
+      width: 90%;
+    }
+  }
+
+  // About
+  .about {
+    margin-top: 50px !important;
+    height: auto;
+    position: relative;
+    background: none !important;
+
+    h1 {
+      font-size: 1.8rem;
+    }
+
+    h1 span {
+      font-size: 1.8rem;
+    }
+
+    img {
+      width: 140px;
+    }
+
+    .about-desc {
+      width: 90%;
+      margin-top: 30px;
+    }
+
+    .about-desc p {
+      font-size: $font-size-tablet;
+    }
+
+  }
+
+  // Services
+  .services {
+    .services-list {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .card {
+      width: 80%;
+
+      .service-img {
+        width: 150px;
+        height: 150px;
+      }
+
+      .service-title {
+        font-size: 1.3rem;
+      }
+
+      .service-description {
+        font-size: 0.95rem;
+      }
+    }
+  }
+
+}
+
+// For Mobile
+@media (max-width: 767px) {
+
+  // Navbar
+  .header {
+
+    .offcanvas-body {
+      padding: 2rem;
+      background-color: #f8f9fa;
+    }
+
+    .offcanvas .btn-close {
+      filter: invert(0);
+    }
+
+    .offcanvas .navbar-toggler {
+      border: none;
+      background-color: transparent;
+    }
+
+    .offcanvas {
+      width: 60% !important;
+    }
+
+    .navbar-toggler {
+      border: none;
+      background-color: transparent;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .navbar-nav {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+
+        .nav-link {
+          text-align: left;
+          color: $primary-color;
+          text-decoration: none;
+          padding: 1rem;
+          font-size: 18px;
+          font-weight: 500;
+          border-radius: 8px;
+
+          &:hover {
+            background-color: $secondary-color;
+            color: $primary-color;
+            transition: background-color 0.3s ease;
+          }
+
+          &.active {
+            background-color: $tertiary-color;
+            color: $primary-color;
+          }
+
+          &:focus {
+            background-color: $secondary-color;
+            color: $primary-color;
+            outline: none;
+            box-shadow: 0 0 0 2px $primary-color;
+          }
+        }
+      }
+
+      .btn {
+        background-color: $primary-color;
+        color: $secondary-color;
+        border: solid 2px $secondary-color;
+        padding: 10px 15px 10px 15px;
+        border-radius: 10px;
+        font-size: 18px;
+        font-weight: 500;
+        transition: all 0.3s ease;
+        width: 100%;
+        display: block;
+        margin-top: 20px;
+
+        &:hover {
+          background-color: $secondary-color;
+          border: solid 2px $primary-color;
+          color: $primary-color;
+        }
+      }
+
+    }
+  }
+
+  // Hero
+  .hero {
+    margin-top: 120px;
+    height: auto;
+
+    .hero-text-section {
+      width: 90%;
+      margin-left: 20px;
+      margin-top: 50px;
+      text-align: center;
+    }
+
+    .hero-title {
+      font-size: 2rem;
+      text-align: center;
+    }
+
+    .hero-subtitle {
+      font-size: 0.9rem;
+    }
+
+    .btn-hero {
+      font-size: 16px;
+      padding: 8px 16px;
+    }
+
+    .hero-img {
+      width: 100%;
+      margin-left: 0;
+    }
+
+  }
+
+  // About
+  .about {
+    margin-top: 100px !important;
+    padding: 20px;
+    height: auto;
+    position: relative;
+    background: $primary-color;
+    border-radius: 15px;
+
+    h1 {
+      font-size: $h1-mobile;
+      line-height: 1.6;
+      color: $quaternary-color;
+    }
+
+    h1 span {
+      font-size: 1.5rem;
+      padding-left: 8px;
+      padding-right: 8px;
+      border-radius: 10px;
+      background-color: $secondary-color;
+      color: $primary-color;
+    }
+
+    img {
+      width: 120px;
+    }
+
+    .about-desc {
+      width: 95%;
+      margin-top: 20px;
+    }
+
+    .about-desc p {
+      color: $secondary-color !important;
+      font-size: $font-size-mobile;
+    }
+  }
+
+  // Services
+  .services {
+    h1 {
+      font-size: 1.8rem;
+    }
+
+    .services-list {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .card {
+      width: 100%;
+      padding: 1.5rem;
+
+      .service-img {
+        width: 120px;
+        height: 120px;
+      }
+
+      .service-title {
+        font-size: 1.2rem;
+      }
+
+      .service-description {
+        font-size: 0.9rem;
+      }
+    }
+  }
+
+  // Kegiatan
+  .kegiatan {
+    .card {
+      max-width: 100%;
+      margin-bottom: 10px !important;
+
+      img {
+        width: 100%;
+        height: auto;
+        max-height: 200px;
+        object-fit: cover;
+        margin-top: 15px;
+      }
+    }
+
+    h1 {
+      color: $primary-color;
+      font-weight: 700;
+      text-align: center;
+      font-size: 1.5rem;
+      line-height: 1.6;
+    }
+
+    p {
+      font-size: 0.9rem;
+    }
+  }
+
+  // CTA
+  .cta {
+    margin-top: 0px !important;
+    margin-bottom: 40px;
+    height: auto;
+
+    .bsb-cta-1 {
+      padding-bottom: 1.5rem;
+      padding-top: 1.5rem;
+    }
+
+    h2 {
+      font-size: 1.25rem;
+    }
+
+    .btn.bsb-btn-2xl {
+      font-size: 14px;
+      padding: 6px 12px;
+    }
+  }
+
+  // Footer
+  footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+
+    .social-icons {
+      flex-direction: column;
+      margin-top: 1rem;
+    }
+
+    .col-lg-3 {
+      text-align: center;
+    }
+
+    .navbar-expand ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+}

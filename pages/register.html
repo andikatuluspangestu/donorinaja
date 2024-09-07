@@ -4,24 +4,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-  <title>Daftar - DonorinAja</title>
+  <title>Daftar | DonorinAja - Setetes Darah, Sejuta Harapan</title>
 
   <!-- Favicon -->
-  <link rel="icon" href="../assets/img/favicon/favicon.svg" type="image/x-icon">
-  <link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="icon" href="../assets/img/favicon/favicon.ico" type="image/x-icon">
+  <link rel="manifest" href="/site.webmanifest">
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-  <!-- Font Awesome CDN -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
-  <!-- Meta -->
+  <!-- Meta Descriptions -->
   <meta name="description"
     content="DonorinAja adalah platform donor darah yang memudahkan pendonor dan penerima darah untuk saling terhubung.">
-  <meta name="keywords"
-    content="donor darah, donorinaja, donorinaja.com, donorinaja.id, donorinaja.co.id, donorinaja.co, donorinaja.net, donorinaja.org, donorinaja.web.id, donorinaja.web, donorinaja.web.app, donorinaja">
   <meta name="author" content="DonorinAja">
   <meta name="robots" content="index, follow">
 
@@ -29,17 +20,26 @@
   <meta property="og:title" content="DonorinAja - Setetes Darah, Sejuta Harapan">
   <meta property="og:description"
     content="DonorinAja adalah platform donor darah yang memudahkan pendonor dan penerima darah untuk saling terhubung.">
-  <meta property="og:image" content="https://donorinaja.com/assets/img/logo.png">
-  <meta property="og:url" content="https://donorinaja.com">
+  <meta property="og:image" content="https://donorinaja.netlify.app/assets/img/thumbnail.webp">
+  <meta property="og:url" content="https://donorinaja.netlify.app/">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="DonorinAja">
   <meta property="og:locale" content="id_ID">
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="../assets/vendor/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="../assets/vendor/font-awesome/css/all.min.css">
-  <link rel="stylesheet" href="../assets/vendor/aos/aos.css">
-  <link rel="stylesheet" href="../assets/css/style.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Poppins:wght@400;700;900&display=swap" rel="stylesheet">
+
+  <!-- All CSS Vendor -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/6656c999dc.js" crossorigin="anonymous"></script>
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="../assets/css/styles.css">
 
 </head>
 
@@ -49,7 +49,8 @@
     <div class="row">
 
       <div class="col-12 col-md-6" id="bg-login">
-        <img class="img-fluid" loading="lazy" src="../assets/img/auth/Background.svg" alt="Welcome back you've been missed!">
+        <img class="img-fluid" loading="lazy" src="../assets/img/auth/Background.svg"
+          alt="Welcome back you've been missed!">
       </div>
 
       <div class="col-12 col-md-6 d-flex align-items-center justify-content-center" id="form-login">
@@ -65,13 +66,15 @@
             <div class="row gy-3 overflow-hidden">
               <div class="col-12">
                 <div class="form-floating">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="name@example.com" required>
+                  <input type="email" class="form-control" name="email" id="email" placeholder="name@example.com"
+                    required>
                   <label for="email" class="form-label">Email</label>
                 </div>
               </div>
               <div class="col-12">
                 <div class="form-floating position-relative">
-                  <input type="password" class="form-control" name="password" id="password" placeholder="Password" required>
+                  <input type="password" class="form-control" name="password" id="password" placeholder="Password"
+                    required>
                   <label for="password" class="form-label">Password</label>
                   <i class="fa fa-eye-slash position-absolute top-50 end-0 translate-middle-y me-3" id="togglePassword"
                     style="cursor: pointer;"></i>
@@ -79,11 +82,11 @@
               </div>
               <div class="col-12">
                 <div class="form-floating position-relative">
-                  <input type="password" class="form-control" name="confpassword" id="confpassword" placeholder="Konfirmasi Password"
-                    required>
+                  <input type="password" class="form-control" name="confpassword" id="confpassword"
+                    placeholder="Konfirmasi Password" required>
                   <label for="confpassword" class="form-label">Konfirmasi Password</label>
-                  <i class="fa fa-eye-slash position-absolute top-50 end-0 translate-middle-y me-3" id="toggleConfPassword"
-                    style="cursor: pointer;"></i>
+                  <i class="fa fa-eye-slash position-absolute top-50 end-0 translate-middle-y me-3"
+                    id="toggleConfPassword" style="cursor: pointer;"></i>
                 </div>
               </div>
               <div class="col-12">
@@ -101,12 +104,14 @@
     </div>
   </section>
 
-  <!-- JS -->
-  <script src="../assets/vendor/jquery/jquery.min.js"></script>
-  <script src="../assets/vendor/bootstrap/js/bootstrap.min.js"></script>
-  <script src="../assets/vendor/aos/aos.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
-  <script src="../assets/js/main.js"></script>
+  <!-- Javascripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+  <!-- Main JS -->
+  <script src="../assets/js/scripts.js"></script>
 
 </body>
 
