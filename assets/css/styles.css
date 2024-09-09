@@ -23,75 +23,63 @@ header {
   left: 0;
   width: 100%;
   z-index: 1000;
-  padding: 30px 30px 0 30px;
-}
-header .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #CA4443 !important;
-  border-radius: 15px;
-  padding: 8px;
-  transition: all 0.3s ease;
-}
-header .navbar .navbar-brand {
-  color: #FFFFFF;
-  font-size: 24px;
-  font-weight: 700;
-}
-header .navbar .navbar-brand img {
-  width: 150px;
-}
-header .navbar .navbar-nav {
-  width: 50%;
-  margin: 0 auto;
-}
-header .navbar .navbar-nav .nav-link {
-  position: relative;
-  color: #FFFFFF;
-  text-decoration: none;
-  padding: 10px 20px;
-  font-size: 18px;
-  font-weight: 500;
-}
-header .navbar .navbar-nav .nav-link:hover::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  border-bottom: 2px solid #FFFFFF;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-}
-header .navbar .navbar-nav .nav-link.active {
-  background-color: #3B2D2D;
-  color: #CA4443;
-}
-header .navbar .navbar-nav .nav-link:focus {
-  background-color: #F2F2F2;
-  color: #CA4443;
-  border-radius: 10px;
-}
-header .navbar .btn {
-  background-color: #F2F2F2;
-  color: #CA4443;
-  border: none;
-  padding: 10px 15px 10px 15px;
-  border-radius: 10px;
-  font-size: 18px;
-  font-weight: 700;
-  transition: all 0.3s ease;
-}
-header .navbar .btn:hover {
-  background-color: #d9d9d9;
-}
-header .navbar .navbar-toggler {
-  background-color: #F2F2F2;
-  color: #CA4443;
-  border: none;
-}
+  padding: 30px 30px 0 30px; }
+  header .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #CA4443 !important;
+    border-radius: 15px;
+    padding: 8px;
+    transition: all 0.3s ease; }
+    header .navbar .navbar-brand {
+      color: #FFFFFF;
+      font-size: 24px;
+      font-weight: 700; }
+      header .navbar .navbar-brand img {
+        width: 150px; }
+    header .navbar .navbar-nav {
+      width: 50%;
+      margin: 0 auto; }
+      header .navbar .navbar-nav .nav-link {
+        position: relative;
+        color: #FFFFFF;
+        text-decoration: none;
+        padding: 10px 20px;
+        font-size: 18px;
+        font-weight: 500; }
+        header .navbar .navbar-nav .nav-link:hover::after {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: 2px;
+          border-bottom: 2px solid #FFFFFF;
+          border-bottom-left-radius: 10px;
+          border-bottom-right-radius: 10px; }
+        header .navbar .navbar-nav .nav-link.active {
+          background-color: #3B2D2D;
+          color: #CA4443; }
+        header .navbar .navbar-nav .nav-link:focus {
+          background-color: #F2F2F2;
+          color: #CA4443;
+          border-radius: 10px; }
+    header .navbar .btn {
+      background-color: #F2F2F2;
+      color: #CA4443;
+      border: none;
+      padding: 10px 15px 10px 15px;
+      border-radius: 10px;
+      font-size: 18px;
+      font-weight: 500;
+      transition: all 0.3s ease; }
+      header .navbar .btn:hover {
+        background-color: #d9d9d9; }
+    header .navbar .navbar-toggler {
+      background-color: #F2F2F2;
+      color: #CA4443;
+      border: none; }
 
 .hero {
   margin-top: 150px;
@@ -529,88 +517,39 @@ footer a:hover {
   overflow: hidden;
   display: flex;
   align-items: center;
-  justify-content: center;
-}
-.login img {
-  width: 100%;
-  height: 100vh;
-  object-fit: cover;
-}
-.login h1 {
-  color: #CA4443;
-  font-size: 2rem;
-  font-weight: 400;
-  text-align: center;
-}
-.login .btn-login {
-  background-color: #CA4443;
-  color: #FFFFFF;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 10px;
-  font-size: 18px;
-  font-weight: 500;
-  text-decoration: none;
-  transition: all 0.3s ease;
-}
-.login .btn-login:hover {
-  background-color: #aa3130;
-  transform: scale(1);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-}
-.login input[type=checkbox] {
-  border: 1px solid #CA4443;
-}
-.login input[type=checkbox]:checked {
-  background-color: #CA4443;
-}
-.login .toggle-password-icon {
-  cursor: pointer;
-}
-.login a {
-  color: #CA4443;
-  text-decoration: none;
-}
-
-.detail-donor {
-  margin-top: 150px;
-}
-.detail-donor img {
-  min-height: 400px;
-  width: 400px;
-  object-fit: cover;
-  border-radius: 15px;
-}
-.detail-donor h2 {
-  color: #CA4443;
-  font-weight: 700;
-}
-.detail-donor .fa-solid {
-  color: #CA4443;
-}
-.detail-donor .location {
-  background-color: #CA4443;
-  padding-left: 5px;
-  padding-right: 5px;
-  color: white;
-  border-radius: 5px;
-  border: none;
-  text-decoration: none;
-}
-.detail-donor .persyaratan {
-  padding-left: 20px;
-  padding-right: 20px;
-}
-.detail-donor .card-persyaratan {
-  margin-top: 20px;
-  background-color: #DC9393;
-  color: #3B2D2D;
-  padding: 20px;
-  border-radius: 20px;
-}
-.detail-donor .card-persyaratan ul li {
-  list-style: none;
-}
+  justify-content: center; }
+  .login img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover; }
+  .login h1 {
+    color: #CA4443;
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: center; }
+  .login .btn-login {
+    background-color: #CA4443;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease; }
+    .login .btn-login:hover {
+      background-color: #aa3130;
+      transform: scale(1);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); }
+  .login input[type="checkbox"] {
+    border: 1px solid #CA4443; }
+  .login input[type="checkbox"]:checked {
+    background-color: #CA4443; }
+  .login .toggle-password-icon {
+    cursor: pointer; }
+  .login a {
+    color: #CA4443;
+    text-decoration: none; }
 
 @media (max-width: 1024px) and (min-width: 768px) {
   .header .offcanvas-body {
