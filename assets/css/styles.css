@@ -586,6 +586,9 @@ footer a:hover {
 .detail-donor {
   margin-top: 160px;
 }
+.detail-donor .detail-donor-description {
+  padding-left: 50px;
+}
 .detail-donor img {
   min-height: 400px;
   max-width: 400px;
@@ -970,9 +973,15 @@ footer a:hover {
     align-items: center;
   }
   .detail-donor {
-    margin-top: 160px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 130px;
+  }
+  .detail-donor .detail-donor-description {
+    padding-left: 0 !important;
   }
   .detail-donor img {
+    margin-bottom: 20px;
     width: 100%;
     object-fit: cover;
     border-radius: 15px;

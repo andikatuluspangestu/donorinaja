@@ -411,9 +411,16 @@
   // Detail Jadwal Kegiatan - Pages
   .detail-donor {
 
-    margin-top: 160px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 130px;
+
+    .detail-donor-description {
+      padding-left: 0 !important;
+    }
 
     img {
+      margin-bottom: 20px;
       width: 100%;
       object-fit: cover;
       border-radius: 15px;
