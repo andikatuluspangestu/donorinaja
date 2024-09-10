@@ -166,3 +166,18 @@
     }
   }
 }
+
+.info_darah {
+  margin-top: 150px;
+
+  h1 {
+    color: $primary-color;
+    font-weight: 700;
+    font-size: $h2-desktop;
+    margin-bottom: 15px;
+  }
+
+  .card {
+    border: none;
+  }
+}

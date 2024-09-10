@@ -662,6 +662,19 @@ footer a:hover {
   background-color: #ffffff;
 }
 
+.info_darah {
+  margin-top: 150px;
+}
+.info_darah h1 {
+  color: #CA4443;
+  font-weight: 700;
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+.info_darah .card {
+  border: none;
+}
+
 @media (max-width: 1024px) and (min-width: 768px) {
   .header .offcanvas-body {
     padding: 2rem;
