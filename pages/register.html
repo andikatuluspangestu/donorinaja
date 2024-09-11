@@ -67,9 +67,16 @@
           </div>
           <form action="#!">
             <div class="row gy-3 overflow-hidden">
+              <!-- Nama Lengkap -->
               <div class="col-12">
                 <div class="form-floating">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="name@example.com"
+                  <input type="text" class="form-control" name="name" id="name" placeholder="Masukan Nama Lengkap Anda" required>
+                  <label for="name" class="form-label">Nama Lengkap</label>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-floating">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="nama_anda@email.com"
                     required>
                   <label for="email" class="form-label">Email</label>
                 </div>
@@ -97,7 +104,7 @@
                   <button class="btn-login" type="submit">Daftar Sekarang</button>
                 </div>
               </div>
-              <div class="d-flex flex-column flex-md-row justify-content-md-center mt-5">
+              <div class="d-flex flex-column flex-md-row justify-content-md-center mt-3" id="ask-login">
                 <p>Sudah Memiliki Akun? <a href="login.html" class="text-decoration-none "><b>Masuk</b></a></p>
               </div>
             </div>
