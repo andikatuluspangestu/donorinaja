@@ -29,6 +29,7 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   });
 });
 
+// Konfigurasi Show/Hidden Password
 const togglePassword = document.querySelector('#togglePassword');
 const password = document.querySelector('#password');
 
@@ -68,3 +69,4 @@ toggleConfPassword.addEventListener('click', function () {
     this.classList.add('fa-eye');
   }
 });
+

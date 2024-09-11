@@ -58,11 +58,11 @@
 }
 
 // detail donor
-.detail-donor {
+.event-detail {
 
   margin-top: 160px;
 
-  .detail-donor-description {
+  .event-detail-description {
     padding-left: 50px;
   }
 
@@ -167,7 +167,7 @@
   }
 }
 
-.info_darah {
+.blood_stock {
   margin-top: 150px;
 
   h1 {
@@ -179,5 +179,24 @@
 
   .card {
     border: none;
+
+    .pagination .page-link {
+      background-color: #ffffff;
+      color: $primary-color;
+      border-color: $primary-color;
+    }
+
+    .pagination .page-item.active .page-link {
+      background-color: $primary-color !important;
+      border-color: $primary-color;
+      color: #f2f2f2;
+    }
+
+    .pagination .page-link:hover {
+      background-color: $primary-color !important;
+      color: #fff;
+      border-color: $primary-color;
+    }
+
   }
 }

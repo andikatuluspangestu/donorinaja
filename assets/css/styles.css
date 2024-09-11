@@ -66,8 +66,7 @@ header .navbar .navbar-nav .nav-link:hover::after {
   border-bottom-right-radius: 10px;
 }
 header .navbar .navbar-nav .nav-link.active {
-  background-color: #3B2D2D;
-  color: #CA4443;
+  border-bottom: 2px solid #FFFFFF;
 }
 header .navbar .navbar-nav .nav-link:focus::after {
   content: "";
@@ -254,7 +253,7 @@ header .navbar .navbar-toggler {
   flex-grow: 1;
 }
 
-.kegiatan {
+.events {
   margin-top: 60px;
   display: flex;
   flex-direction: column;
@@ -262,7 +261,7 @@ header .navbar .navbar-toggler {
   justify-content: center;
   height: auto;
 }
-.kegiatan .card {
+.events .card {
   background-color: #ffffff;
   border: none;
   align-items: center;
@@ -274,35 +273,35 @@ header .navbar .navbar-toggler {
   width: 100%;
   max-width: 350px;
 }
-.kegiatan .card:hover {
+.events .card:hover {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
-.kegiatan .card img {
+.events .card img {
   width: 100%;
   height: auto;
   max-height: 200px;
   object-fit: cover;
 }
-.kegiatan .card h5 a {
+.events .card h5 a {
   font-weight: 600;
   color: #CA4443;
 }
-.kegiatan .card .text-date {
+.events .card .text-date {
   color: #3B2D2D;
 }
-.kegiatan h1 {
+.events h1 {
   color: #CA4443;
   font-size: 2rem;
   font-weight: 700;
   text-align: center;
   margin-bottom: 1rem;
 }
-.kegiatan p {
+.events p {
   color: #3B2D2D;
   font-size: 1.1rem;
   margin-bottom: 1rem;
 }
-.kegiatan .btn-detail {
+.events .btn-detail {
   background-color: #CA4443;
   color: #FFFFFF;
   border: none;
@@ -313,7 +312,7 @@ header .navbar .navbar-toggler {
   text-decoration: none;
   transition: all 0.3s ease;
 }
-.kegiatan .btn-detail:hover {
+.events .btn-detail:hover {
   background-color: #aa3130;
   transform: scale(1);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
@@ -583,28 +582,28 @@ footer a:hover {
   text-decoration: none;
 }
 
-.detail-donor {
+.event-detail {
   margin-top: 160px;
 }
-.detail-donor .detail-donor-description {
+.event-detail .event-detail-description {
   padding-left: 50px;
 }
-.detail-donor img {
+.event-detail img {
   min-height: 400px;
   max-width: 400px;
   object-fit: cover;
   border-radius: 15px;
 }
-.detail-donor h2 {
+.event-detail h2 {
   color: #CA4443;
   font-weight: 700;
   font-size: 36px;
   margin-bottom: 15px;
 }
-.detail-donor .fa-solid {
+.event-detail .fa-solid {
   color: #CA4443;
 }
-.detail-donor .location {
+.event-detail .location {
   background-color: #CA4443;
   padding-left: 10px;
   padding-right: 10px;
@@ -613,66 +612,81 @@ footer a:hover {
   border: none;
   text-decoration: none;
 }
-.detail-donor .location:hover {
+.event-detail .location:hover {
   background-color: #aa3130;
 }
-.detail-donor .persyaratan .table-wrapper {
+.event-detail .persyaratan .table-wrapper {
   overflow: hidden;
   border-radius: 10px;
   padding: 40px;
   background-color: #ffffff;
 }
-.detail-donor .persyaratan .table {
+.event-detail .persyaratan .table {
   width: 100%;
   border-collapse: collapse;
 }
-.detail-donor .persyaratan .table th {
+.event-detail .persyaratan .table th {
   background-color: #CA4443;
   color: #ffffff;
   padding: 15px 30px;
 }
-.detail-donor .persyaratan .table th:first-child {
+.event-detail .persyaratan .table th:first-child {
   border-top-left-radius: 10px;
 }
-.detail-donor .persyaratan .table th:last-child {
+.event-detail .persyaratan .table th:last-child {
   border-top-right-radius: 10px;
 }
-.detail-donor .persyaratan .table td {
+.event-detail .persyaratan .table td {
   padding: 10px 30px;
   border-bottom: 1px solid #f2f2f2;
 }
-.detail-donor .persyaratan .table td:first-child {
+.event-detail .persyaratan .table td:first-child {
   font-weight: bold;
 }
-.detail-donor .persyaratan .table tr:first-child td:first-child {
+.event-detail .persyaratan .table tr:first-child td:first-child {
   border-top-left-radius: 10px;
 }
-.detail-donor .persyaratan .table tr:first-child td:last-child {
+.event-detail .persyaratan .table tr:first-child td:last-child {
   border-top-right-radius: 10px;
 }
-.detail-donor .persyaratan .table tr:last-child td {
+.event-detail .persyaratan .table tr:last-child td {
   border-bottom-style: none;
 }
-.detail-donor .persyaratan .table tr:last-child td:first-child {
+.event-detail .persyaratan .table tr:last-child td:first-child {
   border-bottom-left-radius: 10px;
   font-weight: bold;
 }
-.detail-donor .persyaratan .table tr:last-child td:last-child {
+.event-detail .persyaratan .table tr:last-child td:last-child {
   border-bottom-right-radius: 10px;
   background-color: #ffffff;
 }
 
-.info_darah {
+.blood_stock {
   margin-top: 150px;
 }
-.info_darah h1 {
+.blood_stock h1 {
   color: #CA4443;
   font-weight: 700;
   font-size: 36px;
   margin-bottom: 15px;
 }
-.info_darah .card {
+.blood_stock .card {
   border: none;
+}
+.blood_stock .card .pagination .page-link {
+  background-color: #ffffff;
+  color: #CA4443;
+  border-color: #CA4443;
+}
+.blood_stock .card .pagination .page-item.active .page-link {
+  background-color: #CA4443 !important;
+  border-color: #CA4443;
+  color: #f2f2f2;
+}
+.blood_stock .card .pagination .page-link:hover {
+  background-color: #CA4443 !important;
+  color: #fff;
+  border-color: #CA4443;
 }
 
 @media (max-width: 1024px) and (min-width: 768px) {

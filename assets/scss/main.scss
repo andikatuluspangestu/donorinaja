@@ -56,8 +56,7 @@ header {
         }
 
         &.active {
-          background-color: $tertiary-color;
-          color: $primary-color;
+          border-bottom: 2px solid $quaternary-color;
         }
 
         &:focus {
@@ -280,8 +279,8 @@ header {
   }
 }
 
-// Kegiatan
-.kegiatan {
+// events
+.events {
   margin-top: 60px;
   display: flex;
   flex-direction: column;
