@@ -52,7 +52,7 @@
 
       <div class="col-12 col-md-6 p-0" id="bg-login">
         <img class="img-fluid" loading="lazy" src="../assets/img/auth/Background.svg"
-          alt="Welcome back you've been missed!">
+          alt="">
       </div>
 
       <div class="col-12 col-md-6 d-flex align-items-center justify-content-center bg-white rounded-start-5"
@@ -94,7 +94,7 @@
               </div>
               <div class="col-12">
                 <div class="d-grid">
-                  <button class="btn-login" type="submit">Masuk</button>
+                  <button type="button" class="btn-login" id="btn-login">Masuk</button>
                 </div>
               </div>
               <div class="d-flex flex-column flex-md-row justify-content-md-center mt-3" id="ask-register">
@@ -112,6 +112,13 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+  <script>
+    document.getElementById("btn-login").addEventListener("click", function (event) {
+      event.preventDefault();
+      window.location.href = "../pages/profile.html";
+    });
+  </script>
 
   <!-- Main JS -->
   <script src="../assets/js/scripts.js"></script>
