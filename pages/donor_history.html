@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Profil | DonorinAja - Setetes Darah, Sejuta Harapan</title>
+  <title>Riwayat Transfusi Darah | DonorinAja - Setetes Darah, Sejuta Harapan</title>
 
   <!-- Favicon -->
   <link rel="icon" href="../assets/img/favicon/favicon.ico" type="image/x-icon">
@@ -36,6 +36,8 @@
   <!-- All CSS Vendor -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/2.1.5/css/dataTables.bootstrap5.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/responsive/3.0.3/css/responsive.bootstrap5.css">
 
   <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/6656c999dc.js" crossorigin="anonymous"></script>
@@ -95,8 +97,7 @@
           <div class="card shadow border-0 rounded-4 py-4">
             <div class="card-body">
               <div class="text-center">
-                <img src="../assets/img/avatar.webp" alt="Profile Picture"
-                  class="img-fluid rounded-circle" width="150">
+                <img src="../assets/img/avatar.webp" alt="Profile Picture" class="img-fluid rounded-circle" width="150">
                 <h5 class="mt-3 fw-bold text-danger">
                   Syafa Fatmawati
                 </h5>
@@ -106,9 +107,11 @@
 
                 <!-- Menu Lainnya -->
                 <div class="menu">
-                  <a href="../pages/profile.html" class="btn btn-danger border border-2 border-danger fw-bold">Profil</a>
-                  <a href="../pages/donor_history.html" class="btn btn-outline-danger border border-2 border-danger fw-bold">Riwayat</a>
-                  <a href="../pages/" class="btn btn-outline-danger border border-2 border-danger fw-bold">Privasi</a>
+                  <a href="/pages/profile.html"
+                    class="btn btn-outline-danger border border-2 border-danger fw-bold">Profil</a>
+                  <a href="/pages/donor_history.html"
+                    class="btn btn-danger border border-2 border-danger fw-bold">Riwayat</a>
+                  <a href="/pages/" class="btn btn-outline-danger border border-2 border-danger fw-bold">Privasi</a>
                 </div>
 
               </div>
@@ -118,47 +121,48 @@
         <div class="col-8">
           <div class="card rounded-4 shadow border-0 p-3">
             <div class="card-body">
-              <h5 class="card-title fw-bold text-danger">Profil Saya</h5>
+              <h5 class="card-title fw-bold text-danger">Riwayat Transfusi Darah</h5>
               <hr>
-              <form>
-                <div class="mb-3">
-                  <label for="name" class="form-label">Nama Lengkap</label>
-                  <input type="text" class="form-control" id="name" placeholder="Masukan Nama Lengkap" value="Syafa Fatmawati">
-                </div>
-                <div class="mb-3">
-                  <label for="email" class="form-label">Email</label>
-                  <input type="email" class="form-control" id="email" placeholder="Email" value=" sftm@yahoo.com">
-                </div>
-                <div class="mb-3">
-                  <label for="phone" class="form-label">Nomor Telepon</label>
-                  <input type="tel" class="form-control" id="phone" placeholder="Nomor Telepon" value="+62888-0284-9255">
-                </div>
-                <div class="mb-3">
-                  <label for="blood_type" class="form-label">Golongan Darah</label>
-                  <select class="form-select" id="blood_type">
-                    <option selected>Pilih Golongan Darah</option>
-                    <option value="1">A+</option>
-                    <option value="2">A-</option>
-                    <option value="3" selected aria-selected="true" >B+</option>
-                    <option value="4">B-</option>
-                    <option value="5">AB+</option>
-                    <option value="6">AB-</option>
-                    <option value="7">O+</option>
-                    <option value="8">O-</option>
-                  </select>
-                </div>
-                <div class="mb-3">
-                  <label for="last_donation" class="form-label">
-                    Terakhir Kali Donor Darah
-                  </label>
-                  <input type="date" class="form-control" id="last_donation">
-                </div>
-              </form>
-              <button type="submit" class="btn btn-danger mt-2 fs-6">Simpan Perubahan</button>
+
+              <!-- Table -->
+              <div class="table-responsive">
+                <table class="table table-borderless table-striped table-hover align-middle" id="dataTables">
+                  <thead>
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">Tanggal</th>
+                      <th scope="col">Gol.</th>
+                      <th scope="col">Jumlah (ml)</th>
+                      <th scope="col">Rumah Sakit</th>
+                      <th scope="col">Status</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>01/08/2024</td>
+                      <td>A+</td>
+                      <td>350</td>
+                      <td>RSUD Dr. Soetomo</td>
+                      <td><span class="badge bg-success">Selesai</span></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>15/06/2024</td>
+                      <td>O-</td>
+                      <td>500</td>
+                      <td>RSUP Dr. Sardjito</td>
+                      <td><span class="badge bg-warning">Menunggu</span></td>
+                    </tr>
+                    <!-- Tambahkan data riwayat transfusi lainnya -->
+                  </tbody>
+                </table>
+              </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
   </section>
 
   <!-- Footer -->
@@ -221,6 +225,16 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="https://cdn.datatables.net/2.1.5/js/dataTables.js"></script>
+  <script src="https://cdn.datatables.net/2.1.5/js/dataTables.bootstrap5.js"></script>
+  <script src="https://cdn.datatables.net/responsive/3.0.3/js/dataTables.responsive.js"></script>
+  <script src="https://cdn.datatables.net/responsive/3.0.3/js/responsive.bootstrap5.js"></script>
+
+  <script>
+    new DataTable('#dataTables', {
+      responsive: true
+    });
+  </script>
 
   <!-- Main JS -->
   <script src="../assets/js/scripts.js"></script>

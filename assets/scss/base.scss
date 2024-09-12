@@ -17,3 +17,23 @@ body {
   line-height: 1.6;
   margin: 0;
 }
+
+.text-danger {
+  color: $primary-color !important;
+}
+
+.bg-danger {
+  background-color: $primary-color !important;
+}
+
+.btn-danger {
+  background-color: $primary-color !important;
+  border: solid 2px $primary-color;
+
+  &:hover {
+    background-color: $quaternary-color !important;
+    border: solid 2px $primary-color;
+    color: $primary-color;
+  }
+
+}

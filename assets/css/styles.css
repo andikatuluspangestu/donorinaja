@@ -17,6 +17,24 @@ body {
   margin: 0;
 }
 
+.text-danger {
+  color: #CA4443 !important;
+}
+
+.bg-danger {
+  background-color: #CA4443 !important;
+}
+
+.btn-danger {
+  background-color: #CA4443 !important;
+  border: solid 2px #CA4443;
+}
+.btn-danger:hover {
+  background-color: #FFFFFF !important;
+  border: solid 2px #CA4443;
+  color: #CA4443;
+}
+
 header {
   position: fixed;
   top: 0;
@@ -763,6 +781,81 @@ footer a:hover {
   color: #f2f2f2;
 }
 .events-page .event-list .pagination .page-link:hover {
+  background-color: #CA4443 !important;
+  color: #fff;
+  border-color: #CA4443;
+}
+
+.profile-page {
+  margin-top: 150px;
+}
+.profile-page h1 {
+  color: #CA4443;
+  font-weight: 700;
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+.profile-page .profile-card {
+  border: none;
+  border-radius: 26px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  padding-top: 17px;
+  padding-left: 17px;
+}
+.profile-page .profile-card img {
+  border-radius: 20px;
+  object-fit: cover;
+  height: 200px;
+  width: 100%;
+}
+.profile-page .profile-card .card-body h5 {
+  color: #CA4443;
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+.profile-page .profile-card .card-body .fa-solid {
+  color: #CA4443;
+}
+.profile-page .profile-card .card-body p {
+  color: #3B2D2D;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+.profile-page .profile-card .card-body .btn {
+  background-color: #CA4443;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  margin-bottom: 5px;
+}
+.profile-page .profile-card .card-body .btn:hover {
+  background-color: #aa3130;
+  transform: scale(1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+.profile-page .table {
+  margin-bottom: 20px;
+}
+.profile-page .table thead th {
+  background-color: #CA4443 !important;
+  color: #ffffff;
+}
+.profile-page .pagination .page-link {
+  background-color: #ffffff;
+  color: #CA4443;
+  border-color: #CA4443;
+}
+.profile-page .pagination .page-item.active .page-link {
+  background-color: #CA4443 !important;
+  border-color: #CA4443;
+  color: #f2f2f2;
+}
+.profile-page .pagination .page-link:hover {
   background-color: #CA4443 !important;
   color: #fff;
   border-color: #CA4443;
