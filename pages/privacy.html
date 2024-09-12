@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Riwayat Transfusi Darah | DonorinAja - Setetes Darah, Sejuta Harapan</title>
+  <title>Pengaturan Privasi Akun | DonorinAja - Setetes Darah, Sejuta Harapan</title>
 
   <!-- Favicon -->
   <link rel="icon" href="../assets/img/favicon/favicon.ico" type="image/x-icon">
@@ -110,8 +110,9 @@
                   <a href="../pages/profile.html"
                     class="btn btn-outline-danger border border-2 border-danger fw-bold">Profil</a>
                   <a href="../pages/donor_history.html"
-                    class="btn btn-danger border border-2 border-danger fw-bold">Riwayat</a>
-                  <a href="../pages/privacy.html" class="btn btn-outline-danger border border-2 border-danger fw-bold">Privasi</a>
+                    class="btn btn-outline-danger border border-2 border-danger fw-bold">Riwayat</a>
+                  <a href="../pages/privacy.html"
+                    class="btn btn-danger border border-2 border-danger fw-bold">Privasi</a>
                 </div>
 
               </div>
@@ -121,43 +122,24 @@
         <div class="col-8">
           <div class="card rounded-4 shadow border-0 p-3">
             <div class="card-body">
-              <h5 class="card-title fw-bold text-danger">Riwayat Transfusi Darah</h5>
+              <h5 class="card-title fw-bold text-danger">Pengaturan Privasi Akun</h5>
               <hr>
-
-              <!-- Table -->
-              <div class="table-responsive">
-                <table class="table table-borderless table-striped table-hover align-middle" id="dataTables">
-                  <thead>
-                    <tr>
-                      <th scope="col">#</th>
-                      <th scope="col">Tanggal</th>
-                      <th scope="col">Gol.</th>
-                      <th scope="col">Jumlah (ml)</th>
-                      <th scope="col">Rumah Sakit</th>
-                      <th scope="col">Status</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th scope="row">1</th>
-                      <td>01/08/2024</td>
-                      <td>A+</td>
-                      <td>350</td>
-                      <td>RSUD Dr. Soetomo</td>
-                      <td><span class="badge bg-success">Selesai</span></td>
-                    </tr>
-                    <tr>
-                      <th scope="row">2</th>
-                      <td>15/06/2024</td>
-                      <td>O-</td>
-                      <td>500</td>
-                      <td>RSUP Dr. Sardjito</td>
-                      <td><span class="badge bg-warning">Menunggu</span></td>
-                    </tr>
-                    <!-- Tambahkan data riwayat transfusi lainnya -->
-                  </tbody>
-                </table>
-              </div>
+              <!-- Form Ubah Kata Sandi -->
+              <form action="">
+                <div class="mb-3">
+                  <label for="oldPassword" class="form-label">Kata Sandi Lama</label>
+                  <input type="password" class="form-control" id="oldPassword" name="oldPassword">
+                </div>
+                <div class="mb-3">
+                  <label for="newPassword" class="form-label">Kata Sandi Baru</label>
+                  <input type="password" class="form-control" id="newPassword" name="newPassword">
+                </div>
+                <div class="mb-3">
+                  <label for="confirmPassword" class="form-label">Konfirmasi Kata Sandi Baru</label>
+                  <input type="password" class="form-control" id="confirmPassword" name="confirmPassword">
+                </div>
+                <button type="submit" class="btn btn-danger">Simpan</button>
+              </form>
             </div>
           </div>
         </div>
@@ -225,16 +207,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-  <script src="https://cdn.datatables.net/2.1.5/js/dataTables.js"></script>
-  <script src="https://cdn.datatables.net/2.1.5/js/dataTables.bootstrap5.js"></script>
-  <script src="https://cdn.datatables.net/responsive/3.0.3/js/dataTables.responsive.js"></script>
-  <script src="https://cdn.datatables.net/responsive/3.0.3/js/responsive.bootstrap5.js"></script>
-
-  <script>
-    new DataTable('#dataTables', {
-      responsive: true
-    });
-  </script>
 
   <!-- Main JS -->
   <script src="../assets/js/scripts.js"></script>

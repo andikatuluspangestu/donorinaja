@@ -95,8 +95,7 @@
           <div class="card shadow border-0 rounded-4 py-4">
             <div class="card-body">
               <div class="text-center">
-                <img src="../assets/img/avatar.webp" alt="Profile Picture"
-                  class="img-fluid rounded-circle" width="150">
+                <img src="../assets/img/avatar.webp" alt="Profile Picture" class="img-fluid rounded-circle" width="150">
                 <h5 class="mt-3 fw-bold text-danger">
                   Syafa Fatmawati
                 </h5>
@@ -106,9 +105,11 @@
 
                 <!-- Menu Lainnya -->
                 <div class="menu">
-                  <a href="../pages/profile.html" class="btn btn-danger border border-2 border-danger fw-bold">Profil</a>
-                  <a href="../pages/donor_history.html" class="btn btn-outline-danger border border-2 border-danger fw-bold">Riwayat</a>
-                  <a href="../pages/" class="btn btn-outline-danger border border-2 border-danger fw-bold">Privasi</a>
+                  <a href="../pages/profile.html"
+                    class="btn btn-danger border border-2 border-danger fw-bold">Profil</a>
+                  <a href="../pages/donor_history.html"
+                    class="btn btn-outline-danger border border-2 border-danger fw-bold">Riwayat</a>
+                  <a href="../pages/privacy.html" class="btn btn-outline-danger border border-2 border-danger fw-bold">Privasi</a>
                 </div>
 
               </div>
@@ -120,40 +121,120 @@
             <div class="card-body">
               <h5 class="card-title fw-bold text-danger">Profil Saya</h5>
               <hr>
-              <form>
-                <div class="mb-3">
-                  <label for="name" class="form-label">Nama Lengkap</label>
-                  <input type="text" class="form-control" id="name" placeholder="Masukan Nama Lengkap" value="Syafa Fatmawati">
+
+              <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
+                    type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Akun</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane"
+                    type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Data
+                    Personal</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="health-tab" data-bs-toggle="tab" data-bs-target="#health-tab-pane"
+                    type="button" role="tab" aria-controls="health-tab-pane" aria-selected="false">Kesehatan</button>
+                </li>
+              </ul>
+              <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+                  tabindex="0">
+                  <form action="" method="post" class="mt-3">
+                    <div class="mb-3">
+                      <label for="name" class="form-label">Nama Lengkap</label>
+                      <input type="text" class="form-control" id="name" placeholder="Masukan Nama Lengkap"
+                        value="Syafa Fatmawati">
+                    </div>
+                    <div class="mb-3">
+                      <label for="email" class="form-label">Email</label>
+                      <input type="email" class="form-control" id="email" placeholder="Email" value=" sftm@yahoo.com">
+                    </div>
+                    <div class="mb-3">
+                      <label for="phone" class="form-label">Nomor Telepon</label>
+                      <input type="tel" class="form-control" id="phone" placeholder="Nomor Telepon"
+                        value="+62888-0284-9255">
+                    </div>
+                    <div class="mb-3">
+                      <label for="blood_type" class="form-label">Golongan Darah</label>
+                      <select class="form-select" id="blood_type">
+                        <option selected>Pilih Golongan Darah</option>
+                        <option value="1">A+</option>
+                        <option value="2">A-</option>
+                        <option value="3" selected aria-selected="true">B+</option>
+                        <option value="4">B-</option>
+                        <option value="5">AB+</option>
+                        <option value="6">AB-</option>
+                        <option value="7">O+</option>
+                        <option value="8">O-</option>
+                      </select>
+                    </div>
+                    <div class="mb-3">
+                      <label for="last_donation" class="form-label">
+                        Terakhir Kali Donor Darah
+                      </label>
+                      <input type="date" class="form-control" id="last_donation">
+                    </div>
+                  </form>
                 </div>
-                <div class="mb-3">
-                  <label for="email" class="form-label">Email</label>
-                  <input type="email" class="form-control" id="email" placeholder="Email" value=" sftm@yahoo.com">
+                <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab"
+                  tabindex="0">
+                  <form action="" method="post" class="mt-3">
+                    <div class="mb-3">
+                      <label for="address" class="form-label">Alamat</label>
+                      <input type="text" class="form-control" id="address" placeholder="Alamat"
+                        value="Jl. Kebon Jeruk No. 12">
+                    </div>
+                    <div class="mb-3">
+                      <label for="city" class="form-label">Kota</label>
+                      <input type="text" class="form-control" id="city" placeholder="Kota" value="Jakarta">
+                    </div>
+                    <div class="mb-3">
+                      <label for="province" class="form-label">Provinsi</label>
+                      <input type="text" class="form-control" id="province" placeholder="Provinsi" value="DKI Jakarta">
+                    </div>
+                    <div class="mb-3">
+                      <label for="zip_code" class="form-label">Kode Pos</label>
+                      <input type="text" class="form-control" id="zip_code" placeholder="Kode Pos" value="11520">
+                    </div>
+                  </form>
                 </div>
-                <div class="mb-3">
-                  <label for="phone" class="form-label">Nomor Telepon</label>
-                  <input type="tel" class="form-control" id="phone" placeholder="Nomor Telepon" value="+62888-0284-9255">
+                <div class="tab-pane fade" id="health-tab-pane" role="tabpanel" aria-labelledby="health-tab"
+                  tabindex="0">
+                  <form action="" method="post" class="mt-3">
+                    <div class="mb-3">
+                      <label for="height" class="form-label">Tinggi Badan</label>
+                      <input type="number" class="form-control" id="height" placeholder="Tinggi Badan" value="160">
+                    </div>
+                    <div class="mb-3">
+                      <label for="weight" class="form-label">Berat Badan</label>
+                      <input type="number" class="form-control" id="weight" placeholder="Berat Badan" value="50">
+                    </div>
+                    <div class="mb-3">
+                      <label for="blood_pressure" class="form-label">Tekanan Darah</label>
+                      <input type="text" class="form-control" id="blood_pressure" placeholder="Tekanan Darah"
+                        value="120/80">
+                    </div>
+                    <div class="mb-3">
+                      <label for="blood_sugar" class="form-label">Gula Darah</label>
+                      <input type="text" class="form-control" id="blood_sugar" placeholder="Gula Darah" value="100">
+                    </div>
+                    <div class="mb-3">
+                      <label for="cholesterol" class="form-label">Kolesterol</label>
+                      <input type="text" class="form-control" id="cholesterol" placeholder="Kolesterol" value="200">
+                    </div>
+                    <div class="mb-3">
+                      <label for="allergy" class="form-label">Alergi</label>
+                      <input type="text" class="form-control" id="allergy" placeholder="Alergi" value="Tidak Ada">
+                    </div>
+                    <div class="mb-3">
+                      <label for="disease" class="form-label">Penyakit</label>
+                      <input type="text" class="form-control" id="disease" placeholder="Penyakit" value="Tidak Ada">
+                    </div>
+                  </form>
                 </div>
-                <div class="mb-3">
-                  <label for="blood_type" class="form-label">Golongan Darah</label>
-                  <select class="form-select" id="blood_type">
-                    <option selected>Pilih Golongan Darah</option>
-                    <option value="1">A+</option>
-                    <option value="2">A-</option>
-                    <option value="3" selected aria-selected="true" >B+</option>
-                    <option value="4">B-</option>
-                    <option value="5">AB+</option>
-                    <option value="6">AB-</option>
-                    <option value="7">O+</option>
-                    <option value="8">O-</option>
-                  </select>
-                </div>
-                <div class="mb-3">
-                  <label for="last_donation" class="form-label">
-                    Terakhir Kali Donor Darah
-                  </label>
-                  <input type="date" class="form-control" id="last_donation">
-                </div>
-              </form>
+              </div>
+
               <button type="submit" class="btn btn-danger mt-2 fs-6">Simpan Perubahan</button>
             </div>
           </div>

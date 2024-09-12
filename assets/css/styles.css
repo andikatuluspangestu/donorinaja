@@ -860,6 +860,20 @@ footer a:hover {
   color: #fff;
   border-color: #CA4443;
 }
+.profile-page .nav-tabs .nav-link {
+  color: #CA4443;
+  font-weight: 400;
+  border: none;
+  border-radius: 0;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+.profile-page .nav-tabs .nav-link:hover {
+  border-bottom: 2px solid #CA4443;
+}
+.profile-page .nav-tabs .nav-link.active {
+  border-bottom: 2px solid #CA4443;
+}
 
 @media (max-width: 1024px) and (min-width: 768px) {
   .header .offcanvas-body {

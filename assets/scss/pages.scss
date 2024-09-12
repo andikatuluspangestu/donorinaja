@@ -396,4 +396,24 @@
     border-color: $primary-color;
   }
 
+  .nav-tabs {
+
+    .nav-link {
+      color: $primary-color;
+      font-weight: 400;
+      border: none;
+      border-radius: 0;
+      border-bottom: 2px solid transparent;
+      transition: all 0.3s ease;
+
+      &:hover {
+        border-bottom: 2px solid $primary-color;
+      }
+
+      &.active {
+        border-bottom: 2px solid $primary-color;
+      }
+    }
+  }
+
 }
