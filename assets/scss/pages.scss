@@ -167,6 +167,7 @@
   }
 }
 
+// Stok Darah
 .blood_stock {
   margin-top: 150px;
 
@@ -199,4 +200,104 @@
     }
 
   }
+}
+
+// Events
+.events-page {
+  margin-top: 150px;
+
+  h1 {
+    color: $primary-color;
+    font-weight: 700;
+    font-size: $h2-desktop;
+    margin-bottom: 15px;
+  }
+
+  .event-list {
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    .card {
+      width: 100%;
+      margin-bottom: 20px;
+      border: none;
+      border-radius: 26px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      padding-top: 17px;
+      padding-left: 17px;
+
+      img {
+        border-radius: 20px;
+        object-fit: cover;
+        height: 200px;
+        width: 100%;
+      }
+
+      .card-body {
+
+        h5 {
+          color: $primary-color;
+          font-weight: 700;
+          font-size: 1.3rem;
+          margin-bottom: 10px;
+        }
+
+        .fa-solid {
+          color: $primary-color;
+        }
+
+        p {
+          color: $tertiary-color;
+          font-size: 1rem;
+          margin-bottom: 10px;
+        }
+
+        .btn {
+          background-color: $primary-color;
+          color: $quaternary-color;
+          border: none;
+          // padding: 10px 20px;
+          border-radius: 10px;
+          font-size: 18px;
+          font-weight: 500;
+          text-decoration: none;
+          transition: all 0.3s ease;
+          margin-bottom: 5px;
+
+          &:hover {
+            background-color: darken($primary-color, 10%);
+            transform: scale(1);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+          }
+        }
+      }
+    }
+
+    .pagination {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      justify-content: center;
+
+      .page-link {
+        background-color: #ffffff;
+        color: $primary-color;
+        border-color: $primary-color;
+      }
+
+      .page-item.active .page-link {
+        background-color: $primary-color !important;
+        border-color: $primary-color;
+        color: #f2f2f2;
+      }
+
+      .page-link:hover {
+        background-color: $primary-color !important;
+        color: #fff;
+        border-color: $primary-color;
+      }
+    }
+
+  }
+
 }

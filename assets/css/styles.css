@@ -689,6 +689,85 @@ footer a:hover {
   border-color: #CA4443;
 }
 
+.events-page {
+  margin-top: 150px;
+}
+.events-page h1 {
+  color: #CA4443;
+  font-weight: 700;
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+.events-page .event-list {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.events-page .event-list .card {
+  width: 100%;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 26px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  padding-top: 17px;
+  padding-left: 17px;
+}
+.events-page .event-list .card img {
+  border-radius: 20px;
+  object-fit: cover;
+  height: 200px;
+  width: 100%;
+}
+.events-page .event-list .card .card-body h5 {
+  color: #CA4443;
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+.events-page .event-list .card .card-body .fa-solid {
+  color: #CA4443;
+}
+.events-page .event-list .card .card-body p {
+  color: #3B2D2D;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+.events-page .event-list .card .card-body .btn {
+  background-color: #CA4443;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  margin-bottom: 5px;
+}
+.events-page .event-list .card .card-body .btn:hover {
+  background-color: #aa3130;
+  transform: scale(1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+.events-page .event-list .pagination {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+.events-page .event-list .pagination .page-link {
+  background-color: #ffffff;
+  color: #CA4443;
+  border-color: #CA4443;
+}
+.events-page .event-list .pagination .page-item.active .page-link {
+  background-color: #CA4443 !important;
+  border-color: #CA4443;
+  color: #f2f2f2;
+}
+.events-page .event-list .pagination .page-link:hover {
+  background-color: #CA4443 !important;
+  color: #fff;
+  border-color: #CA4443;
+}
+
 @media (max-width: 1024px) and (min-width: 768px) {
   .header .offcanvas-body {
     padding: 2rem;
@@ -1051,6 +1130,40 @@ footer a:hover {
     color: #CA4443;
     font-weight: 700;
     font-size: 22px;
+    margin-bottom: 15px;
+  }
+  .events-page {
+    margin-top: 150px;
+  }
+  .events-page h1 {
+    font-size: 20px;
+  }
+  .events-page .event-list {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .events-page .event-list .card {
+    padding-top: 20px;
+    padding-left: 20px;
+    border: solid 2px #CA4443;
+  }
+  .events-page .event-list .card img {
+    width: 95%;
+  }
+  .events-page .event-list .card .card-body h5 {
+    font-size: 1.1rem;
+  }
+  .events-page .event-list .card .card-body p {
+    font-size: 0.9rem;
+  }
+  .events-page .event-list .card .card-body .btn {
+    font-size: 16px;
+    /* Ukuran font yang lebih kecil untuk HP */
+    padding: 8px 16px;
+    /* Sesuaikan padding tombol untuk HP */
+  }
+  .events-page .event-list .pagination {
+    margin-top: 15px;
     margin-bottom: 15px;
   }
 }

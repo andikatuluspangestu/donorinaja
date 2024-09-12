@@ -477,4 +477,50 @@
     }
   }
 
+  // Events - Pages
+  .events-page {
+    margin-top: 150px;
+
+    h1 {
+      font-size: $h3-mobile;
+    }
+
+    .event-list {
+      margin-top: 10px;
+      margin-bottom: 10px;
+
+      .card {
+        padding-top: 20px;
+        padding-left: 20px;
+        border: solid 2px $primary-color;
+
+        img {
+          width: 95%;
+        }
+
+        .card-body {
+          h5 {
+            font-size: 1.1rem;
+          }
+
+          p {
+            font-size: 0.9rem;
+          }
+
+          .btn {
+            font-size: 16px;
+            /* Ukuran font yang lebih kecil untuk HP */
+            padding: 8px 16px;
+            /* Sesuaikan padding tombol untuk HP */
+          }
+        }
+      }
+
+      .pagination {
+        margin-top: 15px;
+        margin-bottom: 15px;
+      }
+    }
+  }
+
 }
