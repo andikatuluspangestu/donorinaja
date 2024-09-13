@@ -874,6 +874,9 @@ footer a:hover {
 .profile-page .nav-tabs .nav-link.active {
   border-bottom: 2px solid #CA4443;
 }
+.profile-page .card {
+  margin-top: 5px;
+}
 
 .about-page {
   margin-top: 150px;
