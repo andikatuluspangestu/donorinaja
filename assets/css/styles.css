@@ -1253,21 +1253,21 @@ footer a:hover {
     flex-direction: column;
     align-items: center;
   }
-  .detail-donor {
+  .event-detail {
     margin-left: 20px;
     margin-right: 20px;
     margin-top: 130px;
   }
-  .detail-donor .detail-donor-description {
+  .event-detail .event-detail-description {
     padding-left: 0 !important;
   }
-  .detail-donor img {
+  .event-detail img {
     margin-bottom: 20px;
     width: 100%;
     object-fit: cover;
     border-radius: 15px;
   }
-  .detail-donor h2 {
+  .event-detail h2 {
     color: #CA4443;
     font-weight: 700;
     font-size: 22px;
