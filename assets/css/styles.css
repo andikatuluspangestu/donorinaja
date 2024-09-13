@@ -1192,27 +1192,27 @@ footer a:hover {
   .services .card .service-description {
     font-size: 0.9rem;
   }
-  .kegiatan .card {
+  .events .card {
     max-width: 100%;
     margin-bottom: 10px !important;
     padding: 1rem !important;
     align-items: normal;
   }
-  .kegiatan .card img {
+  .events .card img {
     width: 100%;
     height: auto;
     max-height: 200px;
     object-fit: cover;
     margin-top: 15px;
   }
-  .kegiatan h1 {
+  .events h1 {
     color: #CA4443;
     font-weight: 700;
     text-align: center;
     font-size: 1.5rem;
     line-height: 1.6;
   }
-  .kegiatan p {
+  .events p {
     font-size: 0.9rem;
   }
   .cta {
