@@ -241,8 +241,8 @@
           }
 
           &.active {
-            background-color: $tertiary-color;
-            color: $primary-color;
+            border-bottom: 2px solid $quaternary-color;
+            background-color: #d4d9dd;
           }
 
           &:focus {
@@ -520,6 +520,42 @@
         margin-top: 15px;
         margin-bottom: 15px;
       }
+    }
+  }
+
+  // About - Pages
+  .about-page {
+    margin-top: 150px;
+    min-height: 70vh;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+
+    h1 {
+      color: $primary-color;
+      font-weight: 700;
+      font-size: $h1-mobile;
+      margin-bottom: 15px;
+    }
+
+    h2 {
+      color: $primary-color;
+      font-weight: 700;
+      font-size: $h2-desktop;
+      margin-bottom: 15px;
+    }
+
+    img {
+      width: 40%;
+    }
+
+    p {
+      color: $tertiary-color;
+      font-size: 1rem;
+      margin-bottom: 10px;
+      text-align: justify;
+      display: block;
+      max-width: 100%;
     }
   }
 

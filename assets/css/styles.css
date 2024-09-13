@@ -875,6 +875,34 @@ footer a:hover {
   border-bottom: 2px solid #CA4443;
 }
 
+.about-page {
+  margin-top: 150px;
+  min-height: 70vh;
+}
+.about-page h1 {
+  color: #CA4443;
+  font-weight: 700;
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+.about-page h2 {
+  color: #CA4443;
+  font-weight: 700;
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+.about-page img {
+  width: 100%;
+}
+.about-page p {
+  color: #3B2D2D;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  text-align: justify;
+  display: block;
+  max-width: 100%;
+}
+
 @media (max-width: 1024px) and (min-width: 768px) {
   .header .offcanvas-body {
     padding: 2rem;
@@ -1059,8 +1087,8 @@ footer a:hover {
     transition: background-color 0.3s ease;
   }
   .header .navbar .navbar-nav .nav-link.active {
-    background-color: #3B2D2D;
-    color: #CA4443;
+    border-bottom: 2px solid #FFFFFF;
+    background-color: #d4d9dd;
   }
   .header .navbar .navbar-nav .nav-link:focus {
     background-color: #F2F2F2;
@@ -1272,6 +1300,36 @@ footer a:hover {
   .events-page .event-list .pagination {
     margin-top: 15px;
     margin-bottom: 15px;
+  }
+  .about-page {
+    margin-top: 150px;
+    min-height: 70vh;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+  }
+  .about-page h1 {
+    color: #CA4443;
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  .about-page h2 {
+    color: #CA4443;
+    font-weight: 700;
+    font-size: 36px;
+    margin-bottom: 15px;
+  }
+  .about-page img {
+    width: 40%;
+  }
+  .about-page p {
+    color: #3B2D2D;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    text-align: justify;
+    display: block;
+    max-width: 100%;
   }
 }
 

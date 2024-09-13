@@ -417,3 +417,36 @@
   }
 
 }
+
+// About
+.about-page {
+  margin-top: 150px;
+  min-height: 70vh;
+
+  h1 {
+    color: $primary-color;
+    font-weight: 700;
+    font-size: $h1-desktop;
+    margin-bottom: 15px;
+  }
+
+  h2 {
+    color: $primary-color;
+    font-weight: 700;
+    font-size: $h2-desktop;
+    margin-bottom: 15px;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  p {
+    color: $tertiary-color;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    text-align: justify;
+    display: block;
+    max-width: 100%;
+  }
+}
