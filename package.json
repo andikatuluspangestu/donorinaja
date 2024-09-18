@@ -4,7 +4,7 @@
   "description": "DonorinAja adalah aplikasi berbasis web yang memudahkan masyarakat untuk melakukan donor darah.",
   "main": "index.js",
   "scripts": {
-    "dev": "concurrently \"vite\" \"npm run watch-sass\"",
+    "dev": "vite",
     "build": "echo 'Perintah build dinonaktifkan. Gunakan npm run dev untuk pengembangan.' && exit 1",
     "serve": "vite preview",
     "watch-sass": "sass --watch src/assets/scss/styles.scss:src/assets/css/styles.css",
