@@ -51,8 +51,7 @@
     <div class="row">
 
       <div class="col-12 col-md-6 p-0" id="bg-login">
-        <img class="img-fluid" loading="lazy" src="../assets/img/auth/Background.svg"
-          alt="">
+        <img class="img-fluid" loading="lazy" src="../assets/img/auth/Background.svg" alt="">
       </div>
 
       <div class="col-12 col-md-6 d-flex align-items-center justify-content-center bg-white rounded-start-5"
@@ -65,19 +64,19 @@
               </div>
             </div>
           </div>
-          <form action="#">
+          <form action="#" id="loginForm">
             <div class="row gy-3 px-3 p-md-4 p-xl-5 overflow-hidden">
               <div class="col-12">
                 <div class="form-floating mb-3">
                   <input type="email" class="form-control" name="email" id="email" placeholder="name@example.com"
-                    required>
+                    required value="user@mail.com">
                   <label for="email" class="form-label">Email</label>
                 </div>
               </div>
               <div class="col-12">
                 <div class="form-floating mb-3 position-relative">
                   <input type="password" class="form-control" name="password" id="password"
-                    placeholder="Masukan kata sandi anda" required>
+                    placeholder="Masukan kata sandi anda" required value="password">
                   <label for="password" class="form-label">Kata Sandi</label>
                   <i class="fa fa-eye-slash position-absolute top-50 end-0 translate-middle-y me-3 toggle-password-icon"
                     id="togglePassword">
@@ -113,10 +112,32 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 
-  <script>
+  <!-- <script>
     document.getElementById("btn-login").addEventListener("click", function (event) {
       event.preventDefault();
       window.location.href = "../pages/profile.html";
+    });
+  </script> -->
+
+  <!-- Simpan Data Login ke LocalStorage Session (jQuery) -->
+  <script>
+    $(document).ready(function () {
+      $("#btn-login").click(function () {
+
+        var email       = $("#email").val();
+        var password    = $("#password").val();
+        var remember_me = $("#remember_me").val();
+        var isLogin     = true;
+
+        localStorage.setItem("email", email);
+        localStorage.setItem("password", password);
+        localStorage.setItem("remember_me", remember_me);
+        localStorage.setItem("isLogin", isLogin);
+
+        // Send localStorage data to page profile.html
+        window.location.href = "../pages/profile.html";
+
+      });
     });
   </script>
 

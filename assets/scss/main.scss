@@ -96,6 +96,20 @@ header {
       color: $primary-color;
       border: none;
     }
+
+    .dropdown-menu {
+      display: none;
+    }
+
+    .dropdown-menu.show {
+      margin-top: 50px;
+      left: 0px;
+      display: block;
+    }
+
+    .dropdown-menu .dropdown-item:hover {
+      background-color: #db9f9f;
+    }
   }
 }
 

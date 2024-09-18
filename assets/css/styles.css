@@ -115,6 +115,17 @@ header .navbar .navbar-toggler {
   color: #CA4443;
   border: none;
 }
+header .navbar .dropdown-menu {
+  display: none;
+}
+header .navbar .dropdown-menu.show {
+  margin-top: 50px;
+  left: 0px;
+  display: block;
+}
+header .navbar .dropdown-menu .dropdown-item:hover {
+  background-color: #db9f9f;
+}
 
 .hero {
   margin-top: 150px;

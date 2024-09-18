@@ -12,6 +12,30 @@ DonorinAja adalah aplikasi berbasis web yang memudahkan masyarakat untuk melakuk
 2. Musyaffa Afiful Umam
 3. Kulum Fatmawati
 
+## Requirement
+1. Node.js
+2. SASS Compiler
+3. Browser
+
+## Run Project
+1. Buka folder project pada terminal
+
+```bash
+cd donorinaja
+```
+
+2. Jalankan server
+
+```bash
+node server.js
+```
+
+3. Buka browser dan ketikkan alamat berikut
+
+```
+http://localhost:9000
+```
+
 ## Development
 1. Clone repository ini
 ```
