@@ -5,10 +5,9 @@
   "main": "index.js",
   "scripts": {
     "dev": "vite",
-    "build": "echo 'Perintah build dinonaktifkan. Gunakan npm run dev untuk pengembangan.' && exit 1",
-    "serve": "vite preview",
-    "watch-sass": "sass --watch src/assets/scss/styles.scss:src/assets/css/styles.css",
-    "start": "npm run dev"
+    "build": "vite build",
+    "start": "vite preview",
+    "watch-sass": "sass --watch src/assets/scss/styles.scss:src/assets/css/styles.css"
   },
   "keywords": [],
   "author": "",
