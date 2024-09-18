@@ -15,10 +15,25 @@ DonorinAja adalah aplikasi berbasis web yang memudahkan masyarakat untuk melakuk
 5. Jalankan aplikasi dengan menjalankan perintah
 
   ```bash
-  npm start
+  npm run dev
   ```
 
 6. Buka browser dan akses `localhost:9000`
+
+## Build Aplikasi
+1. Buka terminal dan arahkan ke folder repository
+2. Jalankan perintah
+
+  ```bash
+  npm run build
+  ```
+
+3. Aplikasi akan dibuild dan hasilnya akan ada di folder `dist`
+4. Aplikasi siap di-deploy dan jika ingin menjalankan aplikasi, jalankan perintah
+
+  ```bash
+  npm start
+  ```
 
 ## Tech Stack
 - Pure HTML, CSS, JavaScript
