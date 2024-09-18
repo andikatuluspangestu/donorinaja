@@ -1,0 +1,38 @@
+// Base Styles
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $body-font;
+  color: $tertiary-color;
+  background-color: $quaternary-color;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.text-danger {
+  color: $primary-color !important;
+}
+
+.bg-danger {
+  background-color: $primary-color !important;
+}
+
+.btn-danger {
+  background-color: $primary-color !important;
+  border: solid 2px $primary-color;
+
+  &:hover {
+    background-color: $quaternary-color !important;
+    border: solid 2px $primary-color;
+    color: $primary-color;
+  }
+}
