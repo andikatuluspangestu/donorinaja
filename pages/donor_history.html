@@ -81,9 +81,23 @@
                 <a class="nav-link" href="../pages/donor_events.html">Kegiatan</a>
               </li>
             </ul>
-            <a href="../pages/login.html" class="btn">
-              Profil Saya
+
+            <div id="avatarContainer" class="d-flex justify-content-center position-relative">
+              <img src="../assets/img/avatar.webp" alt="Profile Picture"
+                class="img-fluid rounded-circle border border-3 border-light-subtle" width="50" id="avatarDropdown"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+              <!-- Dropdown menu -->
+              <div class="dropdown-menu px-2 shadow border-0 rounded-4" aria-labelledby="avatarDropdown">
+                <a class="dropdown-item border-0 rounded-4" href="../pages/profile.html">Dashboard</a>
+                <a class="dropdown-item border-0 rounded-4" href="#" id="logout">Logout</a>
+              </div>
+            </div>
+
+            <a href="../pages/login.html" class="btn" id="authButtons">
+              Masuk
             </a>
+
           </div>
         </div>
       </div>
@@ -111,7 +125,8 @@
                     class="btn btn-outline-danger border border-2 border-danger fw-bold">Profil</a>
                   <a href="../pages/donor_history.html"
                     class="btn btn-danger border border-2 border-danger fw-bold">Riwayat</a>
-                  <a href="../pages/privacy.html" class="btn btn-outline-danger border border-2 border-danger fw-bold">Privasi</a>
+                  <a href="../pages/privacy.html"
+                    class="btn btn-outline-danger border border-2 border-danger fw-bold">Privasi</a>
                 </div>
 
               </div>
